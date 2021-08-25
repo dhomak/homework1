@@ -1,10 +1,10 @@
 /*General and mobile styles*/
 
 
-body {
+.body {
   display: flex;
   background-color: #e5e5e5;
-  font-family: sans-serif;
+  font-family: Poppins;
 }
 
 .title {
@@ -21,10 +21,7 @@ body {
   width: 100%;
 }
 
-.line4 {
-  border-bottom: 2px solid lightgrey;
-  width: 100%;
-}
+
 .searchbar {
   background-color: white;
     display: flex;
@@ -42,7 +39,6 @@ body {
   .searchbar-left {
     flex-direction: row;
     margin-left: 10px;
-    font-family: sans-serif;
     font-size: 12px;
     color: grey;
   }
@@ -135,7 +131,7 @@ body {
     top: 0px;
     border-radius: 0px;
     border-right-color: lightgrey;
-    box-shadow: white 0 3px 10px rgb (0 0 0 / 0.2);
+    box-shadow: lightgrey 1px 3px 3px 1px;
   }
 
   .SaaS {
@@ -287,7 +283,7 @@ body {
   .searchbar-right {
     margin-right: 10px;
   }
-  .contentwrapper {
+  .content {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -364,11 +360,21 @@ body {
     margin-right: 10px;
   }
 
+ /* this is a middle card on a desktop */
+ .card {
+  height: 126px;
+  width: 587px;
+  left: 24px;
+  border-radius: 4px;
+  margin: 24px 24px 24px 24px;
+  box-shadow: lightgrey 1px 3px 3px 1px;
+}      
+
   .december {
     position: relative;
   }
   .dec-date {
-    font-family: sans-serif;
+    font-family: Poppins;
     margin-left: 10px;
     font-size: 15px;
     font-weight: bold;
@@ -381,7 +387,7 @@ body {
     display: flex;
     flex-direction: row;
   }
-  li span {
+  .li span {
     line-height: 25px;
   }
   .days {
@@ -390,18 +396,20 @@ body {
   .layout-cal li {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 25px;
     padding: 27px;
-    font-family: sans-serif;
+    font-family: Poppins;
   }
   .blue-num {
     background-color: rgba(16, 156, 241, 1);
     border-radius: 50%;
+    height: 25px;
+    width: 25px;
     color: white;
-    padding: 3px;
+    padding: 4px;
   }
   .blue-date {
-    color: rgba(16, 156, 241, 1);
+    color: blue;
   }
   .reminder-wrapper {
     height: 126px;
@@ -684,10 +692,11 @@ body {
     border-radius: 6%;
   }
 
-  .footer-task-wrapper {
-    position: absolute;
-    left: 275px;
-    bottom: 15px;
+  .footer-readmore {
+    height: 20px ;
+    width: 160px;
+    display: flex;
+    justify-content: center;
     color: rgba(16, 156, 241, 1);
     font-size: 13px;
   }
@@ -699,18 +708,25 @@ body {
     margin: 35px 38px 36px 0px;
   }
 
+  
+   /* this is a right card on a desktop */
+ .card_right {
+  display: flex;
+  width: 445px;
+  height: 344px;
+  margin: 35px 38px 0px 0px;
+  border-radius: 4px;
+  box-shadow: lightgrey 1px 3px 3px 1px;
+  background: white;
+  position: relative; 
+}      
+
   .bar-graph-section {
     height: 344px;
     width: 445px;
-    left: 0px;
-    top: 0px;
-    border-radius: 4px;
-    margin-bottom: 30px;
-    box-shadow: lightgrey 1px 3px 3px 1px;
-    background: white;
+    
 
-    display: flex;
-    position: relative;
+
   }
 
   .deals-top {
@@ -761,8 +777,8 @@ body {
     top: 100px;
     left: 25px;
   }
-  .pie-chart-section {
-    height: 344px;
+  .pie-chart-section {display: none;
+    
     width: 445px;
     left: 0px;
     top: 0px;
@@ -774,13 +790,13 @@ body {
     position: relative;
   }
 
-  .tasks-top {
+  .tasks-top {display: none;
     border-bottom: 1px solid lightgrey;
     height: 60px;
     width: 100%;
   }
 
-  .tasks-left {
+  .tasks-left {display: none;
     position: absolute;
     left: 20px;
     top: 20px;
@@ -797,6 +813,7 @@ body {
     color: rgba(112, 118, 131, 1);
   }
   .tasks-right2 {
+    display: none;
     position: absolute;
     right: 33px;
     top: 20px;
@@ -818,6 +835,7 @@ body {
   }
 
   .pie-chart-position {
+    display: none;
     position: absolute;
     top: 85px;
     left: 30px;
@@ -867,4 +885,8 @@ body {
   .searchbar-right {
     margin-right: 30px;
   }
+  .days {
+    display: none;
+  }
+
 }

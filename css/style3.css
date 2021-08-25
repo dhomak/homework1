@@ -1,6 +1,6 @@
 /*General&mobile*/
 
-body {
+.body {
     display: flex;
     font-family: Poppins;
     background-color: #e5e5e5;
