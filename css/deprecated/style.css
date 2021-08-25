@@ -1,0 +1,124 @@
+/* General and mobile*/
+
+.body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #E5E5E5;  
+}
+
+
+
+.sidebar {
+  display: none;
+}
+
+.searchbar-wrapper {
+  background-color: #ffffff;
+  }
+  
+.tasks-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  box-shadow: lightgrey 1px 3px 3px 1px;
+  background-color: white;
+}
+
+
+  /* Desktop */
+@media only screen and (min-width: 480px) 
+{
+  /*your CSS Rules*/
+
+  
+  .container {
+    background-color: #e5e5e5;
+  }
+
+  .main {
+    background-color: aqua;
+  }
+  
+  .sidebar {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    height: 850px;
+    width: 256px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    background-color: white;
+    border-right-color: lightgrey;
+    box-shadow: white 0 3px 10px rgb (0 0 0 / 0.2);
+    font-family: Poppins;
+  }
+
+  
+
+
+  .searchbar-wrapper {
+    width: 90ch;
+    border-bottom: #e5e5e5;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    width: 100ch;
+  }
+  
+  .column {
+    flex: 50%;
+  }
+
+
+  
+  /* this is a middle card on a desktop */
+  .card {
+    height: 126px;
+    left: 24px;
+    border-radius: 4px;
+    margin: 24px 24px 24px 24px;
+    box-shadow: lightgrey 1px 3px 3px 1px;
+  }
+/* now for the calendar */
+.calendar {
+  height: 218px;
+  left: 0px;
+  top: 0px;
+  position: relative;
+}
+
+  .chart {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin: 24px 24px 24px 24px;
+    box-shadow: lightgrey 1px 3px 3px 1px;
+
+  }
+  .chart div {
+    height: 244px;
+    margin: 35px 38px 36px 0px;
+    box-shadow: lightgrey 1px 3px 3px 1px;
+
+  }
+
+  
+}
+/*Mobile styles */
+@media only screen and (max-width: 400px)
+{
+  .tasks-wrapper {
+    flex-direction: column;
+    
+    left: 0px;
+    top: 0px;
+    position: relative;
+  }
+}

@@ -1,0 +1,69 @@
+/*General and mobile styles*/
+
+
+.body {
+    display: flex;
+    background-color: #e5e5e5;
+    font-family: Poppins;
+  }
+  
+  .title {
+    color: red;
+  }
+  
+  .sidebar {
+    display: none;
+    background-color: white;
+  }
+  
+  .line {
+    border-bottom: 2px solid #EBEFF2;
+    width: 100%;
+  }
+  .searchbar {
+    background-color: white;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      height: 60px;
+      left: 0px;
+      top: 0px;
+      border-radius: 0px;
+      border-bottom-color: lightgrey;
+      border-bottom-width: 1px;
+      justify-content: space-between;
+    }
+    .tasks-wrapper {
+        background-color: white;
+        flex-direction: column;
+      } 
+      .chart-wrapper {
+        background-color: white;
+        flex-direction: column;
+      } 
+      .calendar {
+        background: white;
+      }
+
+/*Desktop styles*/
+@media only screen and (min-width: 400px) {
+    .container {
+        background-color: #e5e5e5;
+      }
+    
+      .main {
+        background-color: aqua;
+      }    
+      .sidebar {
+        float: left;
+        height: 850px;
+        width: 256px;
+        left: 0px;
+        top: 0px;
+        border-radius: 0px;
+        background-color: white;
+        border-right-color: lightgrey;
+        box-shadow: white 0 3px 10px rgb (0 0 0 / 0.2);
+        font-family: Poppins;
+      }
+    }
