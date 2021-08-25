@@ -1,7 +1,12 @@
 /* General and mobile*/
 
-body {
-background-color: #ffffff;  
+.body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #ffffff;  
 }
 
 
@@ -9,12 +14,11 @@ background-color: #ffffff;
 .sidebar {
   display: none;
 }
+
 .searchbar-wrapper {
-  height: 60px;
-  width: 375px;
   background-color: #ffffff;
+  }
   
-}
 .tasks-wrapper {
   display: flex;
   flex-direction: column;
@@ -27,43 +31,17 @@ background-color: #ffffff;
   border: solid 2px yellowgreen;
   
 }
-.card {
-  width: 327px;
-  height: 126px;
-  border: solid 2px green;
-  margin: 24px;
-  background-color: white;
-}
 
-.charts {
-  border: solid 2px chocolate;
-}
-.bar-graph {
-  height: 344px;
-  width: 445px;
 
-  border: solid 2px darkblue;
-}
-.pie-chart {
-  height: 344px;
-  width: 445px;
 
-  border: solid 2px lightblue;
-}
 
 
   /* Desktop */
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 480px) 
+{
   /*your CSS Rules*/
 
-  body {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-
+  
   .container {
     background-color: #e5e5e5;
   }
@@ -88,12 +66,6 @@ background-color: #ffffff;
   }
 
   
-
-  .searchbar-wrapper {
-    width: 1184px;
-    border-bottom: #e5e5e5;
-  }
-
   .tasks-wrapper {
     flex-direction: row;
     height: 718px;
@@ -104,6 +76,12 @@ background-color: #ffffff;
     
     position: relative;
   }
+
+  .searchbar-wrapper {
+    width: 1184px;
+    border-bottom: #e5e5e5;
+  }
+
 
   .tasks {
     height: 718px;
@@ -137,20 +115,28 @@ background-color: #ffffff;
   }
 
   .bar-graph {
+    height: 344px;
+    width: 445px;
     margin: 0 38px 0 30px;
     background-color: darkgreen;
+    border: solid 2px darkblue;
+  }
+  .pie-chart {
+    height: 344px;
+    width: 445px;
+    margin: 30px 38px 36px 30px;
+    background-color: darkorange;}
+    
   }
 
-  .pie-chart {
-    margin: 30px 38px 36px 30px;
-  background-color: darkorange;}
+  
 }
 /*Mobile styles */
 @media only screen and (max-width: 400px)
 {
   .tasks-wrapper {
     flex-direction: column;
-    width: 375px;
+    
     left: 0px;
     top: 0px;
     margin: 35px 30px 36px 36px;

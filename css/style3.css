@@ -78,7 +78,7 @@
 
  /* desktop only sidebar */
 
-    body {
+    .body {
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -196,7 +196,31 @@
 /*Mobile styles */
 @media only screen and (max-width: 400px)
 {
+
+  .body {
+    overflow-x: hidden;
+  }
+  
+  .pagewrapper {
+    width: 100vw;
+    height: 100vh;
+   
+  }
   .sidebar {
+    display: none;
+  }
+
+  .searchbar {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    
+  }
+
+  .searchbar-right {
+    margin-right: 30px;
+  }
+  .days {
     display: none;
   }
 }
