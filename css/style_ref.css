@@ -1,0 +1,252 @@
+/*General and mobile styles*/
+
+
+.body {
+    display: flex;
+    background-color: #e5e5e5;
+    font-family: sans-serif;
+  }
+  
+  .title {
+    color: red;
+  }
+  
+  .sidebar {
+    display: none;
+    background-color: white;
+  }
+  .searchbar {
+    background-color: white;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      height: 60px;
+      left: 0px;
+      top: 0px;
+      border-radius: 0px;
+      border-bottom-color: lightgrey;
+      border-bottom-width: 1px;
+      justify-content: space-between;
+      }
+  
+    .searchbar-left {
+      flex-direction: row;
+      margin-left: 10px;
+      font-family: sans-serif;
+      font-size: 12px;
+      color: grey;
+      vertical-align: middle;
+    
+    }
+  
+    .searchbar-right {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: 1px;
+    }
+
+  
+  .solid-line {
+    border-bottom: 2px solid lightgrey;
+    width: 100%;
+  }
+  .line3 {
+    border-bottom: 2px solid lightgrey;
+    width: 100%;
+  }
+  
+  .tasks-wrapper {
+    background-color: white;
+  
+    flex-direction: column;
+  }
+  
+  .calendar {
+    background: white;
+  }
+  .line2 {
+    border-bottom: 1px solid lightgrey;
+  }
+  
+  .reminder {
+    background: white;
+    display: flex;
+    flex-direction: row;
+  }
+  .call {
+    background: white;
+  }
+  
+  .event {
+    background: white;
+  }
+  
+  .bar-graph-section {
+    background: white;
+  }
+  .pie-chart-section {
+    background: white;
+  }
+
+  /*Desktop styles*/
+
+@media only screen and (min-width: 400px) {
+    /*your CSS rules*/
+    .title {
+      color: blue;
+    }
+  
+    .body {
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+  
+    .pagewrapper {
+      display: flex;
+      flex-direction: column;
+      background-color: #e5e5e5;
+      width: 100vw;
+      height: 100vh;
+    }
+  
+    .main {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      height: 100vh;
+      margin-left: 258px;
+    }
+  
+    .sidebar {
+      display: flex;
+      position: fixed;
+      flex-direction: column;
+      height: 850px;
+      width: 256px;
+      left: 0px;
+      top: 0px;
+      border-right-color: lightgrey;
+      box-shadow: white 0 3px 10px rgb (0 0 0 / 0.2);
+    }
+  
+    .SaaS {
+      color: #109cf1;
+      font-family: sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      width: 100%;
+      height: 22px;
+      padding-left: 10%;
+      padding-top: 5%;
+    }
+
+    .searchbar {
+        display: flex;
+        flex-direction: row;
+        height: 60px;
+        left: 0px;
+        top: 0px;
+        border-radius: 0px;
+        border-bottom-color: lightgrey;
+        border-bottom-width: 1px;
+        justify-content: space-between;
+        font-family: Poppins;
+        
+      }
+    
+      .searchbar-items {
+        flex-direction: row;
+        margin-left: 10px;
+        font-size: 12px;
+        text-align: middle;
+        margin-right: 10px;
+
+      }
+      
+      .contentwrapper {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        position: relative;
+      }
+      .tasks-wrapper {
+        flex-direction: column;
+        width: 635px;
+        left: 260px;
+        top: 0px;
+        margin: 35px 30px 36px 36px;
+        box-shadow: lightgrey 1px 3px 3px 1px;
+        position: relative;
+      }
+    
+      .calendar {
+        height: 218px;
+        width: 635px;
+        left: 0px;
+        top: 0px;
+        position: relative;
+      }
+      .above-calendar {
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+      }
+
+      .charts {
+        display: flex;
+        flex-direction: column;
+        width: 445px;
+        height: 718px;
+        margin: 35px 38px 36px 0px;
+      }
+
+      .pie-chart-section {
+        height: 344px;
+        width: 445px;
+        left: 0px;
+        top: 0px;
+        border-radius: 4px;
+        box-shadow: lightgrey 1px 3px 3px 1px;
+        background: white;
+    
+        display: flex;
+        position: relative;
+      }
+
+@media only screen and (max-width: 400px) {
+
+    .body {
+        overflow-x: hidden;
+      }
+      
+      .pagewrapper {
+        width: 100vw;
+        height: 100vh;
+       
+      }
+      .sidebar {
+        display: none;
+      }
+    
+      .searchbar {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100vw;
+        
+      }
+    
+      .searchbar-right {
+        margin-right: 30px;
+      }
+      .card {
+        width: 327px;
+        height: 126px;
+        border: solid 2px green;
+        margin: 24px;
+        background-color: white;
+      }
+}

@@ -1,0 +1,202 @@
+/*General&mobile*/
+
+body {
+    display: flex;
+    font-family: Poppins;
+    background-color: #e5e5e5;
+  }
+
+  a:link {
+    text-decoration: none;
+    color: #109cf1;
+  }
+
+  /* Solid line */
+    .solid-line {
+      border-bottom: 2px solid lightgrey;
+      width: 100%;
+    }
+
+  /* sidebar */
+    .sidebar {
+    display: none;
+    background-color: white;
+    }
+
+    .calendar {
+      background-color: white;
+    }
+
+    .card {
+      background-color: white;
+      display: flex;
+      flex-direction: row;
+    }
+
+    
+    .card-right{
+      background-color: white;
+    }
+    
+    /* search bar */
+    .searchbar {
+      background-color: white;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      height: 60px;
+      left: 0px;
+      top: 0px;
+      border-radius: 0px;
+      border-bottom-color: lightgrey;
+      border-bottom-width: 1px;
+      justify-content: space-between;
+      }
+
+/*Desktop styles*/
+  
+@media only screen and (min-width: 400px) 
+{
+    /* main page wrapper */
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        background-color: #e5e5e5;
+        width: 100vw;
+        height: 100vh;
+      }
+}
+
+/* why we using it? gotta remember */
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100vh;
+    margin-left: 258px;
+  }
+
+ /* desktop only sidebar */
+
+    body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    }
+
+    .pagewrapper {
+      display: flex;
+      flex-direction: column;
+      background-color: #e5e5e5;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .main {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      height: 100vh;
+      margin-left: 258px;
+    }
+
+ .sidebar {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    height: 850px;
+    width: 256px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    border-right-color: lightgrey;
+    box-shadow: white 0 3px 10px rgb (0 0 0 / 0.2);
+    font-family: Poppins;
+  }
+
+  /* top search bar */
+  .searchbar {
+    display: flex;  
+    flex-direction: row;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    width: 1184px;
+    border-bottom-color: lightgrey;
+    border-bottom-width: 1px;
+    }
+
+    /* let's try to do do the item spacing the right way */
+
+    .flex-container-search {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: normal;
+        align-items: normal;
+        align-content: normal;
+      }
+          
+
+      /* and now for the content */
+
+      .content-wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        position: relative;
+        background-color: #f0f0f0;
+      }
+
+      .calendar {
+        height: 218px;
+        width: 635px;
+        left: 0px;
+        top: 0px;
+        background-color: white;
+        position: relative;
+      }
+
+/* taaaaasks! */
+.tasks-wrapper {
+  flex-direction: row;
+  height: 718px;
+  width: 635px;
+  left: 0px;
+  top: 0px;
+  margin: 35px 30px 36px 36px;
+   
+  position: relative;
+}
+
+ /* this is a middle card on a desktop */
+ .card {
+  height: 126px;
+  width: 587px;
+  left: 24px;
+  border-radius: 4px;
+  margin: 24px 24px 24px 24px;
+  box-shadow: lightgrey 1px 3px 3px 1px;
+}      
+
+/*trying for a chart */
+.chart-wrapper {
+  flex-direction: column;
+  height: 344px;
+  width: 445px;
+  left: 0px;
+  top: 0px;
+  margin: 35px 30px 36px 36px;
+  
+  position: relative;
+}
+
+/*Mobile styles */
+@media only screen and (max-width: 400px)
+{
+  .sidebar {
+    display: none;
+  }
+}

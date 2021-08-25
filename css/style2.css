@@ -1,0 +1,1010 @@
+/*General and mobile styles*/
+
+
+body {
+    display: flex;
+    font-family: Poppins;
+  }
+
+   
+
+  .sidebar {
+    display: none;
+    background-color: white;
+    font-family: Poppins;
+
+  }
+
+    /* Solid border */
+    hr.solid {
+        border-bottom: 3px solid #EBEFF2;
+        }
+        
+  .line3 {
+    border-bottom: 2px solid lightgrey;
+    width: 100%;
+  }
+  
+  .line4 {
+    border-bottom: 2px solid lightgrey;
+    width: 100%;
+  }
+  .searchbar {
+    background-color: white;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      height: 60px;
+      left: 0px;
+      top: 0px;
+      border-radius: 0px;
+      border-bottom-color: lightgrey;
+      border-bottom-width: 1px;
+      justify-content: space-between;
+      }
+  
+    .searchbar-left {
+      flex-direction: row;
+      margin-left: 10px;
+      font-size: 12px;
+      color: grey;
+      font-family: Poppins;
+    }
+  
+    .searchbar-right {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: 1px;
+    }
+  
+  
+  .line1 {
+    border-bottom: 2px solid lightgrey;
+    width: 1200px;
+  }
+  
+  .tasks-wrapper {
+    background-color: white;
+      flex-direction: column;
+  }
+  
+  .calendar {
+    background: white;
+  }
+  .line2 {
+    border-bottom: 1px solid lightgrey;
+  }
+  
+  .reminder {
+    background: white;
+    display: flex;
+    flex-direction: row;
+  }
+  .call {
+    background: white;
+  }
+    .event {
+    background: white;
+  }
+  
+  .bar-graph-section {
+    background: white;
+  }
+  .pie-chart-section {
+    background: white;
+  }
+  
+  
+  /*Desktop styles*/
+  
+  @media only screen and (min-width: 400px) 
+  
+  {
+    .title {
+        color: blue;
+      }
+  
+    body {
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      font-family: Poppins;
+    }
+  
+    .pagewrapper {
+      display: flex;
+      flex-direction: column;
+      background-color: #e5e5e5;
+      width: 100vw;
+      height: 100vh;
+    }
+  
+    .main {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      height: 100vh;
+      margin-left: 258px;
+    }
+  
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      height: 850px;
+      width: 256px;
+      left: 0px;
+      top: 0px;
+      border-radius: 0px;
+      border-right-color: lightgrey;
+      box-shadow: white 0 3px 10px rgb (0 0 0 / 0.2);
+      font-family: Poppins;
+    }
+  
+    .SaaS {
+      color: #109cf1;
+      font-family: sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      width: 100%;
+      height: 30px;
+      padding-left: 10%;
+      padding-top: 5%;
+    }
+  
+    .account-sierra {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+    }
+  
+    .img-div {
+      padding-left: 5%;
+    }
+  
+    .img-sierra {
+      width: 55px;
+      height: 50px;
+      border-radius: 100%;
+      margin: 15px 0 0 20px;
+    }
+  
+    .name-email {
+      margin-left: 15px;
+    }
+  
+    .name {
+      font-size: 14px;
+      line-height: 21px;
+      color: black;
+      font-weight: bold;
+      position: absolute;
+      top: 5px;
+    }
+  
+    .email {
+      font-size: 11px;
+      line-height: 16.5px;
+      color: grey;
+      position: absolute;
+      top: 30px;
+    }
+  
+    .side-list {
+      display: flex;
+      flex-direction: column;
+      margin-right: 1rem;
+      padding-left: 10%;
+      vertical-align: middle;
+    }
+  
+    .dashboard {
+      display: inline-flex;
+      padding-left: 5%;
+      font-size: 13px;
+      color: rgba(16, 156, 241, 1);
+    }
+  
+    .tasks {
+      display: inline-flex;
+      padding-left: 5%;
+      font-size: 13px;
+      color: darkblue;
+    }
+  
+    .email1 {
+      display: inline-flex;
+      padding-left: 5%;
+      font-size: 13px;
+      color: darkblue;
+    }
+  
+    .contacts {
+      display: inline-flex;
+      padding-left: 5%;
+      font-size: 13px;
+      color: darkblue;
+    }
+  
+    .chat {
+      display: inline-flex;
+      padding-left: 5%;
+      font-size: 13px;
+      color: darkblue;
+    }
+  
+    .deals {
+      display: inline-flex;
+      padding-left: 5%;
+      font-size: 13px;
+      color: darkblue;
+    }
+  
+    .settings-list {
+      margin-right: 1rem;
+      padding-left: 10%;
+    }
+    .settings {
+      display: inline-flex;
+      padding-left: 5%;
+      font-size: 13px;
+      color: darkblue;
+    }
+    .toggle-list {
+      margin-left: 1rem;
+      margin-top: 340px;
+      font-size: 11px;
+      color: grey;
+    }
+  
+    .searchbar {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      height: 60px;
+      width: 1184px;
+      left: 0px;
+      top: 0px;
+      border-radius: 0px;
+      border-bottom-color: lightgrey;
+      border-bottom-width: 1px;
+      justify-content: space-between;
+    }
+  
+    .searchbar-left {
+      flex-direction: row;
+      margin-left: 10px;
+      font-size: 12px;
+      color: grey;
+    }
+  
+    .searchbar-right {
+      margin-right: 10px;
+    }
+    .content-wrapper {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      position: relative;
+    }
+    .tasks-wrapper {
+      flex-direction: column;
+      height: 718px;
+      width: 635px;
+      left: 0px;
+      top: 0px;
+      margin: 35px 30px 36px 36px;
+      box-shadow: lightgrey 1px 3px 3px 1px;
+      position: relative;
+    }
+  
+    .calendar {
+      height: 218px;
+      width: 635px;
+      left: 0px;
+      top: 0px;
+      position: relative;
+    }
+    .progress {
+      display: flex;
+      flex-direction: row;
+      height: 50px;
+    }
+  
+    .progress-left {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      font-family: Poppins;
+      font-size: 13px;
+    }
+  
+    .progress-right {
+      position: absolute;
+      right: 91px;
+      top: 20px;
+      color: rgba(112, 118, 131, 1);
+      font-family: Poppins;
+      font-size: 12px;
+    }
+  
+    .progress-right2 {
+      position: absolute;
+      right: 30px;
+      top: 20px;
+      font-size: 12px;
+      font-family: Poppins;
+      color: rgba(16, 156, 241, 1);
+    }
+  
+    .progress-cal-arrow {
+      position: absolute;
+      right: 20px;
+      top: 13px;
+    }
+  
+
+    .progress-bar-green {
+      background-color: #2ed47a;
+      width: 75%;
+      height: 5px;
+      margin-left: 10px;
+    }
+    .progress-bar-end {
+      background-color: lightgrey;
+      width: 25%;
+      height: 5px;
+      margin-right: 10px;
+    }
+  
+    .december {
+      position: relative;
+    }
+    .dec-date {
+      margin-left: 10px;
+      font-size: 15px;
+      font-weight: bold;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+  
+    .layout-cal {
+      display: flex;
+      flex-direction: row;
+    }
+    li span {
+      line-height: 25px;
+    }
+    .days {
+      display: flex;
+    }
+    .layout-cal li {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      padding: 27px;
+    }
+    .blue-num {
+      height: 25px;
+      width: 25px;
+      background-color: rgba(16, 156, 241, 1);
+      border-radius: 50%;
+      color: white;
+      }
+    .blue-date {
+      color: rgba(16, 156, 241, 1); 
+    }
+    .reminder-wrapper {
+      height: 126px;
+      width: 587px;
+      left: 24px;
+      top: 243px;
+      border-radius: 4px;
+      margin: 24px 24px 24px 24px;
+      box-shadow: lightgrey 1px 3px 3px 1px;
+    }
+  
+    .reminder-content-top {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      height: 33%;
+      width: 100%;
+    }
+  
+    .reminder-left {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      font-weight: bold;
+      font-size: 15px;
+    }
+  
+    .reminder-right {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      color: rgba(112, 118, 131, 1);
+      font-size: 12px;
+    }
+  
+    .reminder-content-middle {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      height: 33%;
+      width: 100%;
+    }
+    .reminder-middle-left {
+      position: absolute;
+      top: 4px;
+      left: 15px;
+      font-size: 13px;
+      color: rgba(112, 118, 131, 1);
+    }
+    .reminder-middle-left2 {
+      position: absolute;
+      top: 4px;
+      left: 80px;
+      font-size: 13px;
+      color: black;
+    }
+    .reminder-content-bottom {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      height: 33%;
+      width: 100%;
+    }
+    .george-pic {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      border-radius: 100%;
+    }
+    .george-name {
+      position: absolute;
+      bottom: 20px;
+      left: 50px;
+      font-size: 13px;
+      color: rgba(112, 118, 131, 1);
+    }
+  
+    .completed-tag {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      border: 15px;
+      background-color: #2ed47a;
+      font-size: 11px;
+      padding: 5px;
+      color: white;
+      border-radius: 6%;
+    }
+    .call-wrapper {
+      height: 126px;
+      width: 587px;
+      left: 24px;
+      top: 243px;
+      border-radius: 4px;
+      margin: 24px 24px 24px 24px;
+      box-shadow: lightgrey 1px 3px 3px 1px;
+    }
+  
+    .call-content-top {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      height: 33%;
+      width: 100%;
+    }
+  
+    .call-left {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      font-weight: bold;
+      font-size: 15px;
+    }
+  
+    .call-right {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      color: rgba(112, 118, 131, 1);
+      font-size: 12px;
+    }
+    .call-content-middle {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      height: 33%;
+      width: 100%;
+    }
+  
+    .call-middle-left {
+      position: absolute;
+      top: 4px;
+      left: 15px;
+      font-size: 13px;
+      color: rgba(112, 118, 131, 1);
+    }
+  
+    .call-middle-left2 {
+      position: absolute;
+      top: 4px;
+      left: 80px;
+      font-size: 13px;
+      color: black;
+    }
+  
+    .call-content-bottom {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      height: 33%;
+      width: 100%;
+    }
+  
+    .rebecca-pic {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      border: white;
+      border-radius: 100%;
+    }
+  
+    .rebecca-name {
+      position: absolute;
+      bottom: 20px;
+      left: 50px;
+      font-size: 13px;
+      color: rgba(112, 118, 131, 1);
+    }
+  
+    .edit-icon {
+      position: absolute;
+      bottom: 15px;
+      right: 110px;
+    }
+  
+    .trash-icon {
+      position: absolute;
+      bottom: 15px;
+      right: 90px;
+    }
+  
+    .ended-tag {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      border: 15px;
+      background-color: rgba(247, 104, 91, 1);
+      font-size: 11px;
+      padding: 5px;
+      padding-right: 15px;
+      padding-left: 15px;
+      color: white;
+      border-radius: 6%;
+    }
+    .event-wrapper {
+      height: 126px;
+      width: 587px;
+      left: 24px;
+      top: 243px;
+      border-radius: 4px;
+      margin: 24px 24px 49px 24px;
+      box-shadow: lightgrey 1px 3px 3px 1px;
+    }
+  
+    .event-content-top {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      height: 33%;
+      width: 100%;
+    }
+  
+    .event-left {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      font-weight: bold;
+      font-size: 15px;
+    }
+  
+    .event-right {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      color: rgba(112, 118, 131, 1);
+      font-size: 12px;
+    }
+  
+    .event-content-middle {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      height: 33%;
+      width: 100%;
+    }
+    .event-middle-left {
+      position: absolute;
+      top: 4px;
+      left: 15px;
+      font-size: 13px;
+      color: rgba(112, 118, 131, 1);
+    }
+    .event-middle-left2 {
+      position: absolute;
+      top: 4px;
+      left: 80px;
+      font-size: 13px;
+      color: black;
+    }
+    .event-content-bottom {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      height: 33%;
+      width: 100%;
+    }
+    .lindsey-pic {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      border-radius: 100%;
+    }
+    .lindsey-name {
+      position: absolute;
+      bottom: 20px;
+      left: 50px;
+      font-size: 13px;
+      color: rgba(112, 118, 131, 1);
+    }
+  
+    .completed-tag {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      border: 15px;
+      background-color: #2ed47a;
+      font-size: 11px;
+      padding: 5px;
+      color: white;
+      border-radius: 6%;
+    }
+  
+    .footer-task-wrapper {
+      position: absolute;
+      left: 275px;
+      bottom: 15px;
+      color: rgba(16, 156, 241, 1);
+      font-size: 13px;
+    }
+    .charts {
+      display: flex;
+      flex-direction: column;
+      width: 445px;
+      height: 718px;
+      margin: 35px 38px 36px 0px;
+    }
+  
+    .bar-graph-section {
+      height: 344px;
+      width: 445px;
+      left: 0px;
+      top: 0px;
+      border-radius: 4px;
+      margin-bottom: 30px;
+      box-shadow: lightgrey 1px 3px 3px 1px;
+      background: white;
+  
+      display: flex;
+      position: relative;
+    }
+  
+    .deals-top {
+      border-bottom: 1px solid lightgrey;
+      height: 60px;
+      width: 100%;
+    }
+  
+    .deals-left {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      color: black;
+      font-weight: bold;
+      font-size: 15px;
+    }
+  
+    .deals-right {
+      position: absolute;
+      right: 85px;
+      top: 20px;
+      font-size: 12px;
+      color: rgba(112, 118, 131, 1);
+    }
+    .deals-right2 {
+      position: absolute;
+      right: 33px;
+      top: 20px;
+      font-size: 12px;
+  
+      color: rgba(16, 156, 241, 1);
+    }
+  
+    .deals-right-arrow {
+      position: absolute;
+      right: 20px;
+      top: 12px;
+    }
+  
+    .closed-deals {
+      position: absolute;
+      top: 70px;
+      left: 10px;
+    }
+  
+    .deals-graph {
+      position: absolute;
+      top: 100px;
+      left: 25px;
+    }
+    .pie-chart-section {
+      height: 344px;
+      width: 445px;
+      left: 0px;
+      top: 0px;
+      border-radius: 4px;
+      box-shadow: lightgrey 1px 3px 3px 1px;
+      background: white;
+  
+      display: flex;
+      position: relative;
+    }
+  
+    .tasks-top {
+      border-bottom: 1px solid lightgrey;
+      height: 60px;
+      width: 100%;
+    }
+  
+    .tasks-left {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      color: black;
+      font-weight: bold;
+      font-size: 15px;
+    }
+  
+    .tasks-right {
+      position: absolute;
+      right: 95px;
+      top: 20px;
+      font-size: 12px;
+      color: rgba(112, 118, 131, 1);
+    }
+    .tasks-right2 {
+      position: absolute;
+      right: 33px;
+      top: 20px;
+      font-size: 12px;
+  
+      color: rgba(16, 156, 241, 1);
+    }
+  
+    .tasks-right-arrow {
+      position: absolute;
+      right: 20px;
+      top: 12px;
+    }
+  
+    .line5 {
+      position: absolute;
+      top: 35px;
+      border-bottom: 5px solid blue;
+    }
+  
+    .pie-chart-position {
+      position: absolute;
+      top: 85px;
+      left: 30px;
+    }
+  
+    .active-label {
+      position: absolute;
+      top: 150px;
+      left: 320px;
+    }
+  
+    .completed-label {
+      position: absolute;
+      top: 175px;
+      left: 320px;
+    }
+  
+    .ended-label {
+      position: absolute;
+      top: 200px;
+      left: 320px;
+    }
+    .tasks-completion {
+        color: black;
+        font-weight: bold;
+        left: 320px;
+      }
+  }
+  
+  @media only screen and (max-width: 400px) {
+  
+    .body {
+      overflow-x: hidden;
+      font-family: Poppins;
+    }
+    
+    .pagewrapper {
+      width: 100vw;
+      height: 100vh;
+      font-family: Poppins;
+    }
+    .sidebar {
+      display: none;
+    }
+  
+    .searchbar {
+      width: 90vw;
+      height: 60px;
+      font-family: Poppins;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      height: 60px;
+      left: 0px;
+      top: 0px;
+      border-radius: 0px;
+      border-bottom-color: lightgrey;
+      border-bottom-width: 1px;
+      justify-content: space-between;
+    }
+    .searchbar-right {
+        margin-right: 30px;
+      }
+    .tasks-wrapper {
+        background-color: white;
+          flex-direction: column;
+      }
+
+    .line1 {
+        border-bottom: 2px solid lightgrey;
+        width: 1200px;
+      }
+    .line2 {
+    border-bottom: 1px solid lightgrey;
+  }
+    .line4 {
+        border-bottom: 2px solid lightgrey;
+        width: 100%;
+      }
+    .line3 {
+        border-bottom: 2px solid lightgrey;
+        width: 100%;
+      }
+
+    .dashboard {
+        display: inline-flex;
+        font-size: 13px;
+        color: rgba(16, 156, 241, 1);
+      }
+      .tasks {
+        display: inline-flex;
+        font-size: 13px;
+        color: darkblue;
+      }
+      .tasks-wrapper {
+        flex-direction: column;
+        width: 375px;
+        left: 0px;
+        top: 0px;
+        position: absolute;
+        top:63px  }
+      .progress-left {
+        position: absolute;
+        left: 20px;
+        top: 63px;
+        font-family: Poppins;
+        font-size: 13px;
+      }
+    
+      .progress-right {
+        position: absolute;
+        left: 210px;
+        top: 63px;
+        color: rgba(112, 118, 131, 1);
+        font-family: Poppins;
+        font-size: 12px;
+      }
+      .progress-right2 {
+        position: absolute;
+        left: 241px;
+        top: 63px;
+        font-size: 12px;
+        font-family: Poppins;
+        color: rgba(16, 156, 241, 1);
+      }
+      .progress-cal-arrow {
+        position: absolute;
+        left: 351px;
+        top: 64px;
+      }
+      .progress-bar-green {
+        background-color: #2ed47a;
+        position: absolute;
+        top: 129px;
+        width: 75%;
+        height: 5px;
+        margin-left: 1px;
+      }
+      .progress-bar-end {
+        background-color: lightgrey;
+        position: absolute;
+        top: 129px;
+        width: 25%;
+        height: 5px;
+        margin-right: 1px;
+      }
+      .december {
+        position: absolute;
+        top: 123px;
+        font-weight: bold;
+        font-size: 15px;
+
+      }
+      .layout-cal {
+       display: none;   
+      }
+    
+      .reminder-wrapper {
+        position: absolute;
+        top: 175px;
+        border-radius: 4px;
+        margin: 10px 10px 10px 10px;
+        box-shadow: lightgrey 1px 3px 3px 1px;
+      }
+      .event-wrapper {
+        top: 325px;
+        border-radius: 4px;
+        margin: 10px 10px 10px 10px;
+        box-shadow: lightgrey 1px 3px 3px 1px;
+      }
+      .event-content-top {
+          display: none;}
+        .event-left {
+            display: none;}
+        .event-right {
+            display: none; }
+        .event-content-middle {
+            display: none;}
+        .event-middle-left {display: none;}
+
+
+      .lindsey-name {
+          display: none;}
+      .completed-tag {
+          display: none;}
+
+      .footer-task-wrapper {
+                top: 491px;
+        color: rgba(16, 156, 241, 1);
+        font-size: 13px;
+        margin: 10px 10px 10px 10px;
+        box-shadow: lightgrey 1px 3px 3px 1px;
+      }
+      .charts {
+          display: none;}}
